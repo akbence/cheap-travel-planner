@@ -2,7 +2,7 @@ import requests
 import json
 import yaml
 
-
+#An apikey is required to authenticate with the given source
 def get_api_key():
     with open('settings.yaml') as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
